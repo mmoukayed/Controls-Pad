@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10386612E4DC84700B4AD2B /* BusSimTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10386602E4DC84700B4AD2B /* BusSimTouchBar.swift */; };
+		D10386632E4DC91900B4AD2B /* BusControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10386622E4DC91900B4AD2B /* BusControlButton.swift */; };
+		D10386652E4DCA3300B4AD2B /* BusDoorControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10386642E4DCA3300B4AD2B /* BusDoorControlButton.swift */; };
+		D13D07472C62A1E100F7EC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D07462C62A1E100F7EC3E /* AppDelegate.swift */; };
+		D13D07492C62A1E100F7EC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D07482C62A1E100F7EC3E /* ViewController.swift */; };
+		D13D074B2C62A1E300F7EC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13D074A2C62A1E300F7EC3E /* Assets.xcassets */; };
+		D13D074E2C62A1E300F7EC3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D13D074D2C62A1E300F7EC3E /* Base */; };
+		D14050FA2CC52BE500AE76F4 /* CarGearShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14050F92CC52BE500AE76F4 /* CarGearShifter.swift */; };
+		D14C8C4F2C68C29D000E7A67 /* ThrottleControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C8C4E2C68C29D000E7A67 /* ThrottleControlButton.swift */; };
+		D14C8C542C693953000E7A67 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14C8C532C693953000E7A67 /* DFRFoundation.framework */; };
+		D14C8C552C693953000E7A67 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D14C8C532C693953000E7A67 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D15E97ED2CABF3BD00398C3B /* CarGearShifterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E97EC2CABF3BD00398C3B /* CarGearShifterSlider.swift */; };
+		D18B2E1B2C6B92BF00F0AD3F /* TrafficTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E1A2C6B92BF00F0AD3F /* TrafficTouchBar.swift */; };
+		D18B2E1D2C6B96FD00F0AD3F /* TrafficButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E1C2C6B96FD00F0AD3F /* TrafficButton.swift */; };
+		D18B2E1F2C6B9A8400F0AD3F /* FlightSimTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E1E2C6B9A8400F0AD3F /* FlightSimTouchBar.swift */; };
+		D18B2E212C6BB0B400F0AD3F /* FlightControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E202C6BB0B400F0AD3F /* FlightControlButton.swift */; };
+		D18B2E232C6BB94900F0AD3F /* TrainSimTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E222C6BB94900F0AD3F /* TrainSimTouchBar.swift */; };
+		D18B2E252C6BBAA100F0AD3F /* TrainControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E242C6BBAA100F0AD3F /* TrainControlButton.swift */; };
+		D18B2E272C6BBD1300F0AD3F /* TrainThrottleControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B2E262C6BBD1300F0AD3F /* TrainThrottleControlButton.swift */; };
+		D1B3BC172CABE8F300B8E51C /* RacingSimTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3BC162CABE8F300B8E51C /* RacingSimTouchBar.swift */; };
+		D1B3BC1B2CABECAC00B8E51C /* CarControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3BC1A2CABECAC00B8E51C /* CarControlButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D14C8C562C693953000E7A67 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D14C8C552C693953000E7A67 /* DFRFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D10386602E4DC84700B4AD2B /* BusSimTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSimTouchBar.swift; sourceTree = "<group>"; };
+		D10386622E4DC91900B4AD2B /* BusControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusControlButton.swift; sourceTree = "<group>"; };
+		D10386642E4DCA3300B4AD2B /* BusDoorControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDoorControlButton.swift; sourceTree = "<group>"; };
+		D13D07432C62A1E100F7EC3E /* Touchbar Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touchbar Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13D07462C62A1E100F7EC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D13D07482C62A1E100F7EC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D13D074A2C62A1E300F7EC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D13D074D2C62A1E300F7EC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D13D074F2C62A1E300F7EC3E /* Touchbar_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Touchbar_Test.entitlements; sourceTree = "<group>"; };
+		D14050F92CC52BE500AE76F4 /* CarGearShifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGearShifter.swift; sourceTree = "<group>"; };
+		D14C8C4E2C68C29D000E7A67 /* ThrottleControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleControlButton.swift; sourceTree = "<group>"; };
+		D14C8C532C693953000E7A67 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		D14C8C572C6939B4000E7A67 /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		D14C8C582C6939E1000E7A67 /* Touchbar_Test-Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touchbar_Test-Bridging.h"; sourceTree = "<group>"; };
+		D15E97EC2CABF3BD00398C3B /* CarGearShifterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGearShifterSlider.swift; sourceTree = "<group>"; };
+		D18B2E1A2C6B92BF00F0AD3F /* TrafficTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficTouchBar.swift; sourceTree = "<group>"; };
+		D18B2E1C2C6B96FD00F0AD3F /* TrafficButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficButton.swift; sourceTree = "<group>"; };
+		D18B2E1E2C6B9A8400F0AD3F /* FlightSimTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSimTouchBar.swift; sourceTree = "<group>"; };
+		D18B2E202C6BB0B400F0AD3F /* FlightControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightControlButton.swift; sourceTree = "<group>"; };
+		D18B2E222C6BB94900F0AD3F /* TrainSimTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainSimTouchBar.swift; sourceTree = "<group>"; };
+		D18B2E242C6BBAA100F0AD3F /* TrainControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainControlButton.swift; sourceTree = "<group>"; };
+		D18B2E262C6BBD1300F0AD3F /* TrainThrottleControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainThrottleControlButton.swift; sourceTree = "<group>"; };
+		D1B3BC162CABE8F300B8E51C /* RacingSimTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingSimTouchBar.swift; sourceTree = "<group>"; };
+		D1B3BC1A2CABECAC00B8E51C /* CarControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D13D07402C62A1E100F7EC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C8C542C693953000E7A67 /* DFRFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D13D073A2C62A1E100F7EC3E = {
+			isa = PBXGroup;
+			children = (
+				D13D07452C62A1E100F7EC3E /* Touchbar Test */,
+				D13D07442C62A1E100F7EC3E /* Products */,
+				D14C8C522C693952000E7A67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D13D07442C62A1E100F7EC3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13D07432C62A1E100F7EC3E /* Touchbar Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D13D07452C62A1E100F7EC3E /* Touchbar Test */ = {
+			isa = PBXGroup;
+			children = (
+				D13D07462C62A1E100F7EC3E /* AppDelegate.swift */,
+				D13D07482C62A1E100F7EC3E /* ViewController.swift */,
+				D13D074A2C62A1E300F7EC3E /* Assets.xcassets */,
+				D13D074C2C62A1E300F7EC3E /* Main.storyboard */,
+				D13D074F2C62A1E300F7EC3E /* Touchbar_Test.entitlements */,
+				D14C8C4E2C68C29D000E7A67 /* ThrottleControlButton.swift */,
+				D14C8C572C6939B4000E7A67 /* TouchBar.h */,
+				D14C8C582C6939E1000E7A67 /* Touchbar_Test-Bridging.h */,
+				D18B2E1A2C6B92BF00F0AD3F /* TrafficTouchBar.swift */,
+				D18B2E1C2C6B96FD00F0AD3F /* TrafficButton.swift */,
+				D18B2E1E2C6B9A8400F0AD3F /* FlightSimTouchBar.swift */,
+				D18B2E202C6BB0B400F0AD3F /* FlightControlButton.swift */,
+				D18B2E222C6BB94900F0AD3F /* TrainSimTouchBar.swift */,
+				D1B3BC162CABE8F300B8E51C /* RacingSimTouchBar.swift */,
+				D10386602E4DC84700B4AD2B /* BusSimTouchBar.swift */,
+				D18B2E242C6BBAA100F0AD3F /* TrainControlButton.swift */,
+				D10386642E4DCA3300B4AD2B /* BusDoorControlButton.swift */,
+				D18B2E262C6BBD1300F0AD3F /* TrainThrottleControlButton.swift */,
+				D1B3BC1A2CABECAC00B8E51C /* CarControlButton.swift */,
+				D10386622E4DC91900B4AD2B /* BusControlButton.swift */,
+				D15E97EC2CABF3BD00398C3B /* CarGearShifterSlider.swift */,
+				D14050F92CC52BE500AE76F4 /* CarGearShifter.swift */,
+			);
+			path = "Touchbar Test";
+			sourceTree = "<group>";
+		};
+		D14C8C522C693952000E7A67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14C8C532C693953000E7A67 /* DFRFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13D07422C62A1E100F7EC3E /* Touchbar Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13D07522C62A1E300F7EC3E /* Build configuration list for PBXNativeTarget "Touchbar Test" */;
+			buildPhases = (
+				D13D073F2C62A1E100F7EC3E /* Sources */,
+				D13D07402C62A1E100F7EC3E /* Frameworks */,
+				D13D07412C62A1E100F7EC3E /* Resources */,
+				D14C8C562C693953000E7A67 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Touchbar Test";
+			productName = "Touchbar Test";
+			productReference = D13D07432C62A1E100F7EC3E /* Touchbar Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13D073B2C62A1E100F7EC3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D13D07422C62A1E100F7EC3E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D13D073E2C62A1E100F7EC3E /* Build configuration list for PBXProject "Touchbar Test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D13D073A2C62A1E100F7EC3E;
+			productRefGroup = D13D07442C62A1E100F7EC3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13D07422C62A1E100F7EC3E /* Touchbar Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D13D07412C62A1E100F7EC3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13D074B2C62A1E300F7EC3E /* Assets.xcassets in Resources */,
+				D13D074E2C62A1E300F7EC3E /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D13D073F2C62A1E100F7EC3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18B2E232C6BB94900F0AD3F /* TrainSimTouchBar.swift in Sources */,
+				D13D07492C62A1E100F7EC3E /* ViewController.swift in Sources */,
+				D1B3BC172CABE8F300B8E51C /* RacingSimTouchBar.swift in Sources */,
+				D13D07472C62A1E100F7EC3E /* AppDelegate.swift in Sources */,
+				D14050FA2CC52BE500AE76F4 /* CarGearShifter.swift in Sources */,
+				D1B3BC1B2CABECAC00B8E51C /* CarControlButton.swift in Sources */,
+				D18B2E212C6BB0B400F0AD3F /* FlightControlButton.swift in Sources */,
+				D18B2E1D2C6B96FD00F0AD3F /* TrafficButton.swift in Sources */,
+				D10386632E4DC91900B4AD2B /* BusControlButton.swift in Sources */,
+				D15E97ED2CABF3BD00398C3B /* CarGearShifterSlider.swift in Sources */,
+				D10386612E4DC84700B4AD2B /* BusSimTouchBar.swift in Sources */,
+				D14C8C4F2C68C29D000E7A67 /* ThrottleControlButton.swift in Sources */,
+				D18B2E272C6BBD1300F0AD3F /* TrainThrottleControlButton.swift in Sources */,
+				D18B2E1B2C6B92BF00F0AD3F /* TrafficTouchBar.swift in Sources */,
+				D18B2E252C6BBAA100F0AD3F /* TrainControlButton.swift in Sources */,
+				D18B2E1F2C6B9A8400F0AD3F /* FlightSimTouchBar.swift in Sources */,
+				D10386652E4DCA3300B4AD2B /* BusDoorControlButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D13D074C2C62A1E300F7EC3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13D074D2C62A1E300F7EC3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D13D07502C62A1E300F7EC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D13D07512C62A1E300F7EC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D13D07532C62A1E300F7EC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Touchbar Test/Touchbar_Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRRP7TR324;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Controls Pad";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codeify.Controls-Pad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Touchbar Test/Touchbar_Test-Bridging.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		D13D07542C62A1E300F7EC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Touchbar Test/Touchbar_Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRRP7TR324;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Controls Pad";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codeify.Controls-Pad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Touchbar Test/Touchbar_Test-Bridging.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D13D073E2C62A1E100F7EC3E /* Build configuration list for PBXProject "Touchbar Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13D07502C62A1E300F7EC3E /* Debug */,
+				D13D07512C62A1E300F7EC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13D07522C62A1E300F7EC3E /* Build configuration list for PBXNativeTarget "Touchbar Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13D07532C62A1E300F7EC3E /* Debug */,
+				D13D07542C62A1E300F7EC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13D073B2C62A1E100F7EC3E /* Project object */;
+}
