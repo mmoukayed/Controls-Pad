@@ -1,4 +1,4 @@
-# Touchbar Test
+# Controls Pad (Formally known as Touchbar Test) 
 
 A macOS menu bar application that provides custom Touch Bar controls for simulation games. Use your MacBook Pro's Touch Bar as a virtual control panel for flight simulators, train simulators, racing games, bus simulators, and traffic control games.
 
