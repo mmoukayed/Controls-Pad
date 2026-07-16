@@ -30,14 +30,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate, NSMenuDe
         menu.addItem(NSMenuItem(title: "Show Train Sim TouchBar", action: #selector(createTrainSimTouchBar), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Show Racing Sim TouchBar", action: #selector(createRaceSimTouchBar), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Show Bus Sim TouchBar", action: #selector(createBusSimTouchBar), keyEquivalent: ""))
-        menu.addItem(NSMenuItem(title: "Show Traffic Control TouchBar", action: #selector(createTrafficTouchBar), keyEquivalent: ""))
+//        menu.addItem(NSMenuItem(title: "Show Traffic Control TouchBar", action: #selector(createTrafficTouchBar), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: ""))
         statusItem.menu = menu
         
         DFRSystemModalShowsCloseBoxWhenFrontMost(true)
         let touchBarIdentifier = NSTouchBarItem.Identifier(rawValue: "TouchBar")
         let touchBarItem = NSCustomTouchBarItem.init(identifier: touchBarIdentifier)
-        let touchBarButton = NSButton(image: NSImage(systemSymbolName: "gamecontroller",accessibilityDescription: "")!, target: nil, action: #selector(createFlightSimTouchBar))
+//        let touchBarButton = NSButton(image: NSImage(systemSymbolName: "gamecontroller",accessibilityDescription: "")!, target: nil, action: #selector(createQuickControlsTouchBar)
+        let touchBarButton = NSImageView(image: NSImage(named: "NSColorPanel")!)
         touchBarItem.view = touchBarButton
 //        NSTouchBarItem.addSystemTrayItem(touchBarItem)
         DFRElementSetControlStripPresenceForIdentifier(touchBarIdentifier, true)
@@ -45,6 +46,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate, NSMenuDe
     }
     @objc func quitApp() {
         NSApplication.shared.terminate(self)
+    }
+    @objc func createQuickControlsTouchBar() {
+        statusItem.button?.performClick(nil)
     }
     @objc func createTrafficTouchBar() {
         var touchbar = NSTouchBar()

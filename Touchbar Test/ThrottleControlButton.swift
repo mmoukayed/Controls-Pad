@@ -17,7 +17,7 @@ class ThrottleControlButton: NSButton {
         print("pressed")
         if(self.tag == 0) {
             kc = CGKeyCode(kVK_ANSI_S) // Replace with the desired media key
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemRed
         }
         else if(self.tag == 1){
@@ -27,7 +27,7 @@ class ThrottleControlButton: NSButton {
         }
         else if(self.tag == 2) {
             kc = CGKeyCode(kVK_ANSI_W)
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemGreen
         }
         else {
@@ -45,13 +45,13 @@ class ThrottleControlButton: NSButton {
     override func touchesEnded(with event: NSEvent) {
         print("released")
         if(self.tag == 0) {
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
         }
         else if(self.tag == 1){
             self.image = NSImage(systemSymbolName: "brakesignal", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
         }
         else if(self.tag == 2) {
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
         }
         else {
             self.image = NSImage(systemSymbolName: "brakesignal", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))

@@ -31,14 +31,14 @@ class TrainSimTouchBar: NSObject, NSTouchBarDelegate {
             return customTouchBarItem
         }
         if identifier == .trainThrottleUpButton {
-            let btn = TrainThrottleControlButton(image: (NSImage(systemSymbolName: "arrowshape.up", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
+            let btn = TrainThrottleControlButton(image: (NSImage(named: "arrowshape.up")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
             btn.tag = 0
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
             customTouchBarItem.view = btn
             return customTouchBarItem
         }
         if identifier == .trainThrottleDownButton {
-            let btn = TrainThrottleControlButton(image: (NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
+            let btn = TrainThrottleControlButton(image: (NSImage(named: "arrowshape.down")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
             btn.tag = 1
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
             customTouchBarItem.view = btn

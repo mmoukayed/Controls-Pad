@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="24006"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24506"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="22500"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
@@ -709,132 +708,14 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Touchbar_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TKG-Mm-WrY">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="5yU-PK-VzG"/>
+                    </imageView>
                     <touchBar key="touchBar" id="Tqy-MB-Ube">
                         <touchBarItems>
-                            <touchBarItem id="qoM-u7-JiH">
-                                <viewController key="viewController" id="OPj-Np-uSD">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LyJ-uz-sqp">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <buttonCell key="cell" type="push" title="Engine" bezelStyle="rounded" image="engine.combustion" catalog="system" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="QUA-Ou-Y2h">
-                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <color key="bezelColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
-                                        <connections>
-                                            <action selector="enginePressed:" target="XfG-lQ-9wD" id="TqP-jK-v1D"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarItem id="dfS-9u-Ob3">
-                                <viewController key="viewController" id="MTr-t4-43z">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uJk-fM-4Go">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                        <buttonCell key="cell" type="push" title="Reverse" bezelStyle="rounded" image="gearshift.layout.sixspeed" catalog="system" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fvw-Sd-hum">
-                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                                        <connections>
-                                            <action selector="reversePressed:" target="XfG-lQ-9wD" id="ESa-pA-diN"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarItem id="TjM-kC-haC">
-                                <viewController key="viewController" id="ImX-JL-OuD">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-VM-osm">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <buttonCell key="cell" type="push" title="Alt Hold" bezelStyle="rounded" image="airplane" catalog="system" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NMp-sN-3hD">
-                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <color key="bezelColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                                        <connections>
-                                            <action selector="altholdPressed:" target="XfG-lQ-9wD" id="sLC-wz-rcu"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarItem id="K9E-En-gz2">
-                                <viewController key="viewController" id="t1S-9k-FAS">
-                                    <stackView key="view" distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-F4-L4t">
-                                        <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
-                                        <subviews>
-                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Ox-iI-K9C">
-                                                <rect key="frame" x="-2" y="-1" width="129" height="28"/>
-                                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="N3J-nO-5A9">
-                                                    <font key="font" size="12" name="Helvetica"/>
-                                                </sliderCell>
-                                            </slider>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oL8-R9-cGb">
-                                                <rect key="frame" x="131" y="7" width="14" height="16"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="P" id="jAe-5x-mHN">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
-                                        </subviews>
-                                        <visibilityPriorities>
-                                            <integer value="1000"/>
-                                            <integer value="1000"/>
-                                        </visibilityPriorities>
-                                        <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                        </customSpacing>
-                                    </stackView>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="gIs-Ty-kd8"/>
-                            <touchBarItem id="KuS-e8-yla">
-                                <viewController key="viewController" id="Bde-aR-b3j">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCP-7F-EPV" customClass="ThrottleControlButton" customModule="Touchbar_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JHj-fU-Ejd">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                            <imageReference key="image" image="arrowshape.down" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
-                                                <hierarchicalColors>
-                                                    <color name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                                                    <color name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                </hierarchicalColors>
-                                            </imageReference>
-                                        </buttonCell>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarItem id="1LN-J2-yOR">
-                                <viewController key="viewController" id="2Sr-vW-ORK">
-                                    <button key="view" tag="1" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UdS-hI-eAb" customClass="ThrottleControlButton" customModule="Touchbar_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="brakesignal" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mds-FV-fDT">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
-                            <touchBarItem id="sRC-Ly-IsC">
-                                <viewController key="viewController" id="75D-WP-EV1">
-                                    <button key="view" tag="2" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-JW-jvd" customClass="ThrottleControlButton" customModule="Touchbar_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <buttonCell key="cell" type="push" bezelStyle="rounded" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GrG-OH-CtV">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                            <imageReference key="image" image="arrowshape.up" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
-                                                <hierarchicalColors>
-                                                    <color name="systemGreenColor" catalog="System" colorSpace="catalog"/>
-                                                    <color name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                </hierarchicalColors>
-                                            </imageReference>
-                                        </buttonCell>
-                                    </button>
-                                </viewController>
-                            </touchBarItem>
+                            <touchBarTextViewItem identifier="NSTouchBarItemIdentifierCharacterPicker" id="SOX-Df-nut"/>
                         </touchBarItems>
                     </touchBar>
                 </viewController>
@@ -844,11 +725,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="airplane" catalog="system" width="16" height="15"/>
-        <image name="arrowshape.down" catalog="system" width="15" height="16"/>
-        <image name="arrowshape.up" catalog="system" width="15" height="16"/>
-        <image name="brakesignal" catalog="system" width="21" height="15"/>
-        <image name="engine.combustion" catalog="system" width="22" height="14"/>
-        <image name="gearshift.layout.sixspeed" catalog="system" width="18" height="14"/>
+        <image name="NSColorPanel" width="32" height="32"/>
     </resources>
 </document>

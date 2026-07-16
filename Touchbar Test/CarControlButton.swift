@@ -18,12 +18,12 @@ class CarControlButton: NSButton {
         print("pressed")
         if(self.tag == 0) {
             kc = CGKeyCode(kVK_ANSI_W) // Replace with the desired media key
-            self.image = NSImage(systemSymbolName: "pedal.accelerator", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "pedal.accelerator")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemGreen
         }
         else if(self.tag == 1){
             kc = CGKeyCode(kVK_ANSI_S)
-            self.image = NSImage(systemSymbolName: "pedal.brake", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "pedal.brake")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemRed
         }
         else {
@@ -41,10 +41,10 @@ class CarControlButton: NSButton {
     override func touchesEnded(with event: NSEvent) {
         print("released")
         if(self.tag == 0) {
-            self.image = NSImage(systemSymbolName: "pedal.accelerator", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
+            self.image = NSImage(named: "pedal.accelerator")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
         }
         else if(self.tag == 1){
-            self.image = NSImage(systemSymbolName: "pedal.brake", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
+            self.image = NSImage(named: "pedal.brake")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
         }
         else {
             self.image = NSImage(systemSymbolName: "burn", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemYellow))

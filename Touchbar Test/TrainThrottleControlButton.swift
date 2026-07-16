@@ -18,12 +18,12 @@ class TrainThrottleControlButton: NSButton {
         print("pressed")
         if(self.tag == 0) {
             kc = CGKeyCode(kVK_ANSI_W) // Replace with the desired media key
-            self.image = NSImage(systemSymbolName: "arrowshape.up", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "arrowshape.up")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemGreen
         }
         else if(self.tag == 1){
             kc = CGKeyCode(kVK_ANSI_S)
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.white))
             self.bezelColor = NSColor.systemRed
         }
         else {
@@ -41,10 +41,10 @@ class TrainThrottleControlButton: NSButton {
     override func touchesEnded(with event: NSEvent) {
         print("released")
         if(self.tag == 0) {
-            self.image = NSImage(systemSymbolName: "arrowshape.up", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
+            self.image = NSImage(named: "arrowshape.up")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen))
         }
         else if(self.tag == 1){
-            self.image = NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
+            self.image = NSImage(named: "arrowshape.down")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed))
         }
         else {
             self.image = NSImage(systemSymbolName: "burn", accessibilityDescription: "")?.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemYellow))

@@ -20,7 +20,7 @@ class CarGearShifter: NSStackView {
         tempView.orientation = .horizontal
         tempView.alignment = .centerY
         tempView.distribution = .fillEqually
-        let pImg = NSImageView(image: NSImage(systemSymbolName: "gearshift.layout.sixspeed", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGray))!)
+        let pImg = NSImageView(image: NSImage(named: "gearshift.layout.sixspeed")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGray))!)
         let label = NSTextField()
         label.isEditable = false
         label.stringValue = "P"

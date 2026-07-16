@@ -11,7 +11,7 @@ import Carbon.HIToolbox.Events
 class RacingSimTouchBar: NSObject, NSTouchBarDelegate {
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
         if identifier == .carGasButton {
-            let btn = CarControlButton(image:  (NSImage(systemSymbolName: "pedal.accelerator", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
+            let btn = CarControlButton(image:  (NSImage(named: "pedal.accelerator")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
             btn.imagePosition = .imageOnly
             btn.tag = 0
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
@@ -19,7 +19,7 @@ class RacingSimTouchBar: NSObject, NSTouchBarDelegate {
             return customTouchBarItem
         }
         if identifier == .carBrakesButton {
-            let btn = CarControlButton(image:  (NSImage(systemSymbolName: "pedal.brake", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
+            let btn = CarControlButton(image:  (NSImage(named: "pedal.brake")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
             btn.imagePosition = .imageOnly
             btn.tag = 1
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)

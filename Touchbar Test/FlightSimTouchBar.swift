@@ -23,7 +23,7 @@ class FlightSimTouchBar: NSObject,NSTouchBarDelegate {
             return customTouchBarItem
         }
         if identifier == .reverseButton {
-            let btn = FlightControlButton(title: "Reverse", image: NSImage(systemSymbolName: "gearshift.layout.sixspeed", accessibilityDescription: "")!,target: self, action: nil)
+            let btn = FlightControlButton(title: "Reverse", image: NSImage(named: "gearshift.layout.sixspeed")!,target: self, action: nil)
             btn.imagePosition = .imageLeft
             btn.tag = 1
             btn.setButtonType(.onOff)
@@ -54,7 +54,7 @@ class FlightSimTouchBar: NSObject,NSTouchBarDelegate {
         }
         
         if identifier == .throttleUpButton {
-            let btn = ThrottleControlButton(image: (NSImage(systemSymbolName: "arrowshape.up", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
+            let btn = ThrottleControlButton(image: (NSImage(named: "arrowshape.up")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemGreen)))!,target: self, action: nil)
             btn.tag = 2
             btn.frame = NSRect(x: 0, y: 0, width: 72, height: 30)
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
@@ -62,7 +62,7 @@ class FlightSimTouchBar: NSObject,NSTouchBarDelegate {
             return customTouchBarItem
         }
         if identifier == .throttleDownButton {
-            let btn = ThrottleControlButton(image: (NSImage(systemSymbolName: "arrowshape.down", accessibilityDescription: "")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
+            let btn = ThrottleControlButton(image: (NSImage(named: "arrowshape.down")!.withSymbolConfiguration(NSImage.SymbolConfiguration(hierarchicalColor: NSColor.systemRed)))!,target: self, action: nil)
             btn.tag = 0
             btn.frame = NSRect(x: 0, y: 0, width: 72, height: 30)
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
